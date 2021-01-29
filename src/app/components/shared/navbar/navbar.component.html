@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFE6CC">
+  <a class="navbar-brand" [routerLink]="['/home']" >
+    <!--TODO preguntar cómo funcionaba el routerLink-->
+    <img src="assets/img/mermelada-logo.png" width="60" height="80" class="d-inline-block align-top" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/home']">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/register-login']">Registro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/login-register']">Inicio de sesión</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" onsubmit="return false">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar mermelada" aria-label="Search" (keyup.enter)="buscarMermelada(buscarTexto.value)" #buscarTexto>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="buscarMermelada(buscarTexto.value)">Buscar</button>
+    </form>
+  </div>
+</nav>
+<div>
+  <img src="assets/img/imagen_bajo_navbar.png" class="d-inline-block align-top container-fluid" alt="">
+</div>
+<!--TODO preguntar a Carlos cómo era para solucionar el espacio en blanco que sale a la derecha
+          preguntar cómo adaptar el alto de la imagen cuando haces el navegador más pequeño-->

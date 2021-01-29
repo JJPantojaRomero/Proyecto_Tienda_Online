@@ -1,0 +1,8 @@
+<div class="card animated container-fluid" style=" overflow: hidden; margin-top: 20px" >
+  <img class="card-img-top" src="{{mermelada.img}}" [alt]="mermelada.nombre">
+  <div class="card-img">
+    <h5 class="card-title">{{mermelada.nombre}}</h5>
+    <h5 class="card-title">{{mermelada.precio | currency:'EUR'  }}</h5>
+  </div>
+  <button class="btn btn-outline-primary btn-block" style="margin-bottom: 8px" (click)="verMermelada()">Ir al producto</button>
+</div>

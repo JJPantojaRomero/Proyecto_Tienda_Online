@@ -1,0 +1,35 @@
+<div class="row" style="margin: 40px auto">
+  <div class="col-md-3">
+    <img class="card-img-top" src="{{mermelada.img}}" [alt]="mermelada.nombre"><br/><br/>
+    <button [routerLink]="['/heroes']" class="btn btn-outline-primary btn-block" style="background-color: white">Volver</button>
+  </div>
+  <div class="col-md-7" style="margin-top: 20px">
+    <h1>Mermelada de {{mermelada.nombre}}</h1>
+    <p>"{{mermelada.slogan}}"</p>
+    <p>{{mermelada.elaboracion}}</p>
+    <h4>{{mermelada.precio | currency:'EUR'  }}</h4>
+    <div class="form-row" style="margin-top: 20px">
+      <div class="col-3">
+        <select class="form-control" style="width: 200px">
+          <option selected>Tipo de bote</option>
+          <option>100 ml</option>
+          <option>250 ml</option>
+        </select>
+      </div>
+      <div class="col-3">
+        <select class="form-control" style="width: 200px">
+          <option selected>Nº de unidades</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-primary" type="submit">Añadir producto</button>
+      </div>
+    </div>
+
+  </div>
+</div>
