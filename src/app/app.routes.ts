@@ -5,7 +5,6 @@ import {ProductComponent} from "./components/product/product.component";
 import {RegisterLoginComponent} from "./components/register-login/register-login.component";
 import {ProfileComponent} from "./components/profile/profile.component";
 import {SearchComponent} from "./components/search/search.component";
-import {SearcherComponent} from "../../../02-spa/src/app/components/searcher/searcher.component";
 
 const APP_ROUTES: Routes =
   [
